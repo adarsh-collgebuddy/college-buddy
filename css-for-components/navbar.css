@@ -1,0 +1,104 @@
+/* NAVBAR CSS */
+
+.navbar {
+    font-family: 'Uxum-Grotesque';
+    background-color: rgb(255, 255, 255);
+    max-width: 1440px;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    /* padding: 0px 80px; */
+    box-sizing: border-box;
+    
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+    width: 204px;
+    height: auto;
+    padding-left: 80px;
+}
+
+.links {
+    color: #1E1E1E;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    text-decoration: none;
+}
+
+.right-links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+.home, .courses{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+/* SIGN IN BUTTON */
+
+.sign-in-button {
+    width: 152px;
+    height: 64px;
+    font-family: 'Uxum-Grotesque';
+    font-size: 1.5rem;
+    background-color: #79B058;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+/* HAMBURGER ICON */
+
+.hamburger_icon{
+    visibility: hidden;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (width < 1440px) {
+    .navbar{
+        max-width: 100%;
+    }
+}
+
+@media (width < 852px) {
+    .navbar{
+        max-width: 100%;
+    }
+    .logo{
+        padding: 12px;
+    }
+    .right-links{
+        visibility: hidden;
+    }
+    .hamburger_icon{
+        visibility: visible;
+        padding-right: 32px;
+    }
+}
+
+@media (width < 480px) {
+    .navbar{
+        max-width: 100%;
+    }
+}

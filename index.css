@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Uxum-Grotesque';
+    src: url(resources/fonts/UxumGrotesqueGX.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: rgb(223, 223, 223);
+}
